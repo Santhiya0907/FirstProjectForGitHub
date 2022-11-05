@@ -82,7 +82,7 @@ public class sampleProject {
 	@GetMapping(value = "/cars")
 	public List<Car> getprice(@RequestBody List<Car> cars) {
 		for (Car c : cars) {
-			if (c.getPrice() < 10000) {
+			if (c.getPrice() < 50000) {
 				c.setPrice(c.getPrice() + (c.getPrice() * 2 / 100));
 			} else if (c.getPrice() >= 10000 && c.getPrice() < 200000) {
 				c.setPrice(c.getPrice() + (c.getPrice() * 5 / 100));
