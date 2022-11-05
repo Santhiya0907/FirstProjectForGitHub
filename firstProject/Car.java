@@ -6,6 +6,7 @@ public class Car {
 	private int price;
 	private String color;
 	private int carNumber;
+	private int carTax;
 	public String getBrand() {
 		return brand;
 	}
@@ -36,6 +37,13 @@ public class Car {
 	}
 	public void setCarNumber(int carNumber) {
 		this.carNumber = carNumber;
+	}
+	
+	public int getCarTax() {
+		return carTax;
+	}
+	public void setCarTax(int carTax) {
+		this.carTax = carTax;
 	}
 	@Override
 	public String toString() {
